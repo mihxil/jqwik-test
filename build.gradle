@@ -1,0 +1,16 @@
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+test {
+    useJUnitPlatform()
+}
+dependencies {
+    testImplementation(
+            'net.jqwik:jqwik:1.5.0',
+            'org.assertj:assertj-core:3.19.0',
+            'org.junit.jupiter:junit-jupiter:5.7.1'
+    )
+}
